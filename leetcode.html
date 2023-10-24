@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leetCode</title>
+</head>
+<body>
+        <script>
+//           @@@@@@@@@@  question no 03 @@@@@@@@@
+
+                // Input: nums = [1,2,1]
+                // Output: [1,2,1,1,2,1]
+
+                // let nums = [1,3,2,1];
+                // let output = [];
+                // for (let i = 0; i < (nums.length); i++) {
+                //     output.push(nums[i]);
+                    
+                // }
+                // let a = nums.concat(output);
+                // console.log(a);
+
+//          @@@@@@@@@@ quesiton 04 @@@@@@@@
+
+                // Input: nums = [1,2,3,1,1,3]
+                // Output: 4
+                // Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+                
+                // let nums = [1,2,3,1,1,3];
+                // let output =0;
+                // for (let i = 0; i < nums.length; i++) {
+                //     for (let j = i; j < nums.length; j++) {
+                //         if (nums[i] == nums[j]  && i < j) {
+                //             output++;
+                //         }
+                        
+                //     }
+                    
+                //     // document.write("<br/>");
+                    
+                // }
+                // document.write(output);
+
+//          @@@@@@@@@@@ questiono 05 @@@@@@@@@@@@@
+
+// Input: operations = ["X++","++X","--X","X--"]
+// Output: 0
+let  x=0;
+
+let operations = ["--X","X++","X++"];
+for (let i = 0; i < operations.length; i++) {
+    // document.write(i);
+    if (operations[i]== "++X" || operations[i]=="X++" ) {
+        x = x+1;
+    }
+    else{
+        x=x-1;
+    }
+    
+}
+document.write(x);
+                
+
+        </script>
+</body>
+</html>

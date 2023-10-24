@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .new{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+        .container{
+            width: 150px;
+            height: 150px;
+            background-color: lightgrey;
+        } */
+
+    </style>
+</head>
+<body>
+    <script>
+        // for cycle one n*2  && for cycle two n+1
+        // let n =1,i;
+        // document.write(n,"<br/>");
+        // for ( i = 0; i < 5; i++) {
+        //     if(i%2==0){
+        //         n = n*2;
+        //     }else{
+        //         n= n+1;
+        //     }
+        // }
+        // // document.write(i);
+        // document.write(n,"<br/>");
+
+        // let user = prompt("enter your iterations :")
+        //     document.write(user,"<br/>");
+        //     let tree = 1;
+        // for (let j = 0; j <= user; j++) {
+        //     let b = prompt("enter cycle : ");
+        //     if (b%2==0) {
+        //         tree=tree*2
+        //         document.write("cycle  ",b," answer ",tree,"<br/>");
+        //     }
+        //     else{ 
+        //         tree=tree+1
+        //         document.write("cycle ",b," answer ",tree,"<br/>");
+        //     }
+            
+        // }
+
+
+
+        // problem solving (advertising startegy)
+
+        // let day =1, shared ,liked ,cumalative;
+
+        // shared =5;
+        // liked=(shared/2);
+        // liked=Math.floor(liked);
+        // document.write(liked);
+
+        // if (day==1) {
+        //     shared =5;
+        //     liked=(shared/2);
+            
+        // }
+
+        // let n =1, shared ,liked ,cumalative;
+        
+        // if(n==1){
+        //     return comulative = 2;
+        // }else if(n==2){
+        //     return comulative = 5;
+        // }else if(n==3){
+        //     return comulative = 9;
+        // }else if(n==4){
+        //     return comulative = 15;
+        // }else if(n==5){
+        //     return comulative = 24;
+        // }else{
+        //     return 0;
+        // }
+
+        // %%%%%%%%%%%%   question 01 
+
+            // let user = prompt("enter numbers");
+            // const arr=[];
+            // let i;
+            // for ( i = 0; i < user; i++) {
+            //     let in2 = prompt("enter arry numbers")
+            //     arr.push(in2);    
+            
+            
+            // }
+            // document.write("\n<br>"+arr);
+            // let find2 = prompt("number to find :");
+            // document.write("\n<br>"+find2);
+
+            //     const final = arr.includes(find2);
+
+            // if (final == true) {
+            //     document.write("Yes");
+            // }else{
+            //     document.write("No");
+            // }
+
+
+        // %%%%%%%%%%%% question 02
+
+        // let start = 2;
+        // let end = 15;
+
+        // for (let i = start; i <= end; i++) {
+        //     if(i%2==1){
+        //         document.write(i);
+        //     }
+        //     else{continue;}
+            
+        // }
+
+        // %%%%%%%%%% beautiful days at the movie 
+        // let i=20;
+        // let j=23;
+        // let k = 6;
+        // let beautiful_days =0;
+        // for (let z = i; z <= j; z++) {
+        //     let reverse = Number(String(z).split('').reverse().join(''))
+        //     let formula = (z-reverse)/k;
+        //     if(Number.isInteger(formula)){
+        //         beautiful_days++;
+        //     }else{
+        //         continue;
+        //     }
+        // }
+        // document.write(beautiful_days);
+
+
+        // %%%%%%%%%%% angry professor
+
+
+        // let k = 2;
+        // let limit=0;
+
+        // let user = prompt();
+        //     const a=[];
+        //     let i;
+        //     for ( i = 0; i < user; i++) {
+        //         let in2 = prompt();
+        //         a.push(in2);      
+        // }
+        // for (let j = 0; j < user; j++) {
+        //     if (a[j] >= 0) {
+        //         limit++;
+        //     }else{
+        //         continue;
+        //     }   
+        // }
+        // if (limit>=k) {
+        //     document.write("NO");
+        // }
+        // else{
+        //     document.write("YES");
+        // }
+
+
+        // let countNotlate=0;
+        // for (let i = 0; i < a.length; i++) {
+        //     if(a[i]<=0){
+        //         countNotlate +=1;
+        //     }
+        // }
+        // return countNotlate>=k ?"NO":"YES";
+
+
+        
+        // let n=5;
+        // let arr=[n];
+        // for (let i = 0; i < arr.length; i++) {
+        //     let in1 = arr.push(i);
+            
+        // }
+        // document.write(arr);
+
+
+        // let  num =[3,2,4]; target=6; let total=0 ;let a; 
+        // nums = [3,3], target = 6; let total=0 ;let a;
+        // let total=0 ;let a=[]; nums = [2,7,11,15], target = 9;
+
+        // for (let i = 0; i < nums.length; i++) {
+        //   for (let j = i+1; j < nums.length; j++) {
+        //         if (nums[i]+nums[j]==target) {
+        //             document.write(i,j);
+        //         }
+        //   }  
+        // }
+
+
+        // problem nunmber 01
+
+        // Input: l1 = [2,4,3], l2 = [5,6,4]
+        // Output: [7,0,8]
+        // Explanation: 342 + 465 = 807.
+
+        // let l1 =[2,4,3];
+        // let l2 =[5,6,4];
+        // let a= l1.reverse();
+        // let b= l2.reverse();
+
+        // const string = a.join('');
+        // const integerNumber = parseInt(string);
+        // const string2 = b.join('');
+        // const integerNumber2 = parseInt(string2);
+        // let final = integerNumber+integerNumber2;
+        // const numberString = final.toString();
+        // const charArray = numberString.split('');
+        // const numberArray = charArray.map(char => parseInt(char));
+
+
+
+
+        // mock interview question number 01
+
+        // let input=[5,7,9,11,15,17];
+        // const output=13;
+        // let next;
+
+        // for (let i = 0; i < input.length; i++) {
+        //     let current =input[i];
+        //     next = current+2;
+        //     if(input[i+1]===next){
+        //         continue;
+        //     }
+        //     else{
+        //         document.write(next);
+        //         break;
+        //     }
+        // }
+        // document.write("the answer is :",next,"\n");
+        
+            // let n = 2 ;
+            // let forcheck=[0,1,2,3,4,5,6,,8,9,10];
+            // let a1=0;
+            // for (let i = 0; i < forcheck.length; i++) {
+            //     if (n%forcheck[i] == 0) {
+            //         a1++;
+            //     }
+            // }
+            // if (a1 <= 2 ) {
+            //             document.write("false");
+            //         }
+            // else{
+            //     document.write("true");
+            // }        
+            // document.write(a1);
+                
+
+            
+                
+
+
+            
+        
+
+    </script>
+    
+    <div class="new"></div>
+    <!-- < class="container">
+        <h3>my messsage</h3>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aspernatur nihil mollitia, ex doloribus nostrum.</P>
+     -->
+<!-- </div> -->
+</body>
+</html>
