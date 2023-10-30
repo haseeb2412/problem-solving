@@ -102,14 +102,44 @@
 // 1st customer has wealth = 1 + 2 + 3 = 6
 // 2nd customer has wealth = 3 + 2 + 1 = 6
 
-let accounts =  [[1,2,3],[3,2,1]];
-for (let i = 0; i < accounts.length; i++) {
-        for (let j = i; j < accounts.length; j++) {
-                document.write(accounts[i],"<br/>");
-        }
-        
-}
+// let accounts =  [[1,2,3],[3,2,1]];
+// let res = 0;
+// for (let i = 0; i < acounts.length; i++) {
+//         let temp = 0;
+//         for (let j = 0; j < acounts[i].length; j++) {
+               
+//                 temp += acounts[i][j];
+//         }
+//         res =Math.max(res,temp);
+
+// }
+// return res;
+
+//  @@@@@@@@@ question 09 @@@@@@@
+
+// Input: candies = [2,3,5,1,3], extraCandies = 3
+// Output: [true,true,true,false,true] 
+ 
+
+        let candies = [2,3,5,1,3], extracandies= 3;
+        let output = [];
+        let max01 = Math.max(...candies);
+        document.write(max01,"   hi   ");
+        // let swing = 0;
+
+
+        for (let i = 0; i < candies.length; i++) {
+                let total = candies[i]+extracandies;
+                if(total >= max01 ){
+                        candies[i] = 'true';
+                }else{
+                        candies[i] = 'false';
+                }
                 
+        }
+        document.write(candies);
+        // document.write(output);
+
 
         </script>
 </body>
