@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerRank</title>
+</head>
+<body>
+    <script>
+
+// 9 6 2015
+// 6 6 2015
+//    library fine 
+
+// int libraryFine(int d1, int m1, int y1, int d2, int m2, int y2) {
+//     int year_diff = y1 - y2 ;     //  >= 0
+//     int month_diff = m1 - m2 ;    // for same year
+//     int date_diff = d1 - d2 ;       // for same month
+    
+    
+//     if(year_diff >= 1){ return 10000 * year_diff ;}
+//     else if(month_diff >=1 && year_diff == 0){ return 500 * month_diff ;}
+//     else if(date_diff >=1 && month_diff == 0 && year_diff == 0){ return 15 * date_diff ;}
+    
+//     else{return 0;}
+// }
+
+// document.write(final);
+
+
+// @@@@@@@@@ question 01 @@@@@@@
+
+
+// Input: number = "123", digit = "3"
+// Output: "12"
+// Explanation: There is only one '3' in "123". After removing '3', the result is "12".
+
+let number = "1231";
+let digit = "1";
+// document.write(number);
+
+while (number.includes(digit)) {
+    number = number.replace(digit, "");
+}
+
+document.write(number);
+
+// if(number.includes(digit)){
+//     document.write("yes");
+// }else{
+//     document.write("No");
+
+// }
+
+    </script>
+</body>
+</html>
