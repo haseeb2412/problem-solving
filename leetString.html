@@ -26,19 +26,66 @@
 
 // items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], ruleKey = "color", ruleValue = "silver"
 
-let items=[["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]];
-let ruleKey="color",ruleValue="silver";
-let output=0;
-var countMatches = function (items, ruleKey, ruleValue) {
-	let count = 0;
+// let items=[["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]];
+// let ruleKey="color",ruleValue="silver";
+// let output=0;
+// var countMatches = function (items, ruleKey, ruleValue) {
+// 	let count = 0;
 
-	const keyIndex = ['type', 'color', 'name'].indexOf(ruleKey);
-	items.forEach(element => {
-		if (element[keyIndex] === ruleValue) count++;
-	});
+// 	const keyIndex = ['type', 'color', 'name'].indexOf(ruleKey);
+// 	items.forEach(element => {
+// 		if (element[keyIndex] === ruleValue) count++;
+// 	});
 
-	return count;
-};
+// 	return count;
+// };
+
+
+//  @@@@@@@@@ question 13 @@@@@@@@@
+
+// Input: s = "RLRRLLRLRL"
+// Output: 4
+// Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
+
+// var balancedStringSplit = function (s) {
+//   let balance = 0;
+//   let result = 0;
+
+//   for (const i of s) {
+//     if (i === 'L') balance--;
+//     else balance++;
+//     if (balance === 0) result++;
+//   }
+
+//   return result;
+// };
+
+// 	let input = "RLRRLLRLRL"
+// 	  let balance = 0;
+//   let result = 0;
+
+// 	for (const i of input) {
+//     if (i === 'L') balance--;
+//     else balance++;
+//     if (balance === 0) result++;
+//   }
+// document.write(result)
+
+//  @@@@@@@@@ question 14 @@@@@@@@@
+
+// var restoreString = function(s, indices) {
+//     let arr = [];
+//     let result = "";
+//     for(let i=0; i<indices.length; i++) {
+//         arr[indices[i]] = s.charAt(i);
+//     }
+//     for(let i=0; i<arr.length; i++) {
+//         result = result + arr[i];
+//     }
+//     return result;
+// };
+
+
     </script>
 </body>
 </html>
