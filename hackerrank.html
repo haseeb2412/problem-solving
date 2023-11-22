@@ -35,15 +35,15 @@
 // Output: "12"
 // Explanation: There is only one '3' in "123". After removing '3', the result is "12".
 
-let number = "1231";
-let digit = "1";
+// let number = "1231";
+// let digit = "1";
+// // document.write(number);
+
+// while (number.includes(digit)) {
+//     number = number.replace(digit, "");
+// }
+
 // document.write(number);
-
-while (number.includes(digit)) {
-    number = number.replace(digit, "");
-}
-
-document.write(number);
 
 // if(number.includes(digit)){
 //     document.write("yes");
@@ -51,6 +51,64 @@ document.write(number);
 //     document.write("No");
 
 // }
+
+
+//    @@@@@@@@ new question  @@@@@@@@@ 
+
+
+
+// let user =prompt("lenght of the array :");
+// let array=[];
+// for (let i = 0; i < user; i++) {
+//     let input=prompt("enter the number :")
+//     array.push(input);
+    
+// }
+// let sortArray =array.sort()
+// document.write("<br>",array);
+// document.write("<br>",sortArray);
+// let input =[7 ,4, 3, 5 ,6 ,2];
+// let sortArray=input.sort();
+// document.write(sortArray);
+
+
+
+// let user = prompt("Length of the array:");
+// let array = [];
+
+// for (let i = 0; i < user; i++) {
+//     let input = prompt("Enter the number:");
+//     array.push(Number(input));  // Convert input to a number before pushing to the array
+// }
+
+// let sortedArray = array.slice().sort((a, b) => a - b);
+
+// document.write("<br>Original Array: ", array);
+// document.write("<br>Sorted Array: ", sortedArray);
+
+//   @@@@@ time conversion question
+
+let ampm = s.charAt(8);
+let militime = "";
+
+if (ampm === "A") {
+  if (s.substring(0, 2) === "12") {
+    militime = "00";  // Change: used assignment operator (=) instead of equality operator (==)
+  } else {
+    militime = s.substring(0, 2);
+  }
+} else { // for PM
+  if (s.substring(0, 2) === "12") {
+    militime = s.substring(0, 2);
+  } else {
+    militime = String(parseInt(s.substring(0, 2), 10) + 12);
+    // Change: Converted the result of the addition to a string using String()
+  }
+}
+
+return militime + s.substring(2, 8);
+
+
 
     </script>
 </body>
