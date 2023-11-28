@@ -88,25 +88,48 @@
 
 //   @@@@@ time conversion question
 
-let ampm = s.charAt(8);
-let militime = "";
+// let ampm = s.charAt(8);
+// let militime = "";
 
-if (ampm === "A") {
-  if (s.substring(0, 2) === "12") {
-    militime = "00";  // Change: used assignment operator (=) instead of equality operator (==)
-  } else {
-    militime = s.substring(0, 2);
-  }
-} else { // for PM
-  if (s.substring(0, 2) === "12") {
-    militime = s.substring(0, 2);
-  } else {
-    militime = String(parseInt(s.substring(0, 2), 10) + 12);
-    // Change: Converted the result of the addition to a string using String()
-  }
-}
+// if (ampm === "A") {
+//   if (s.substring(0, 2) === "12") {
+//     militime = "00";  // Change: used assignment operator (=) instead of equality operator (==)
+//   } else {
+//     militime = s.substring(0, 2);
+//   }
+// } else { // for PM
+//   if (s.substring(0, 2) === "12") {
+//     militime = s.substring(0, 2);
+//   } else {
+//     militime = String(parseInt(s.substring(0, 2), 10) + 12);
+//     // Change: Converted the result of the addition to a string using String()
+//   }
+// }
 
-return militime + s.substring(2, 8);
+// return militime + s.substring(2, 8);
+
+// @@@@@@ question appened and delete
+// hackerhappy
+// hackerrank
+// 9
+let s = "hackerhappy";
+let t  ="hackerrank";
+let k = 9;
+// document.write(r.length);
+// document.write(s.length);
+
+// for (let i = 0; i < s.length; i++) {
+  if(s.length > t.length){
+    let ans = (s.length)-(t.length);
+    document.write(ans);
+    if (ans==k) {
+    document.write("No");
+      
+    }else{document.write("Yes");}
+    // document.write("No")
+  }else{document.write("Yes");}
+  // document.write(`\t${s.indexOf(s[i])} is ${s[i]}\t`)
+// }
 
 
 
