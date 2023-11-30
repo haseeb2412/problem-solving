@@ -119,17 +119,45 @@ let k = 9;
 // document.write(s.length);
 
 // for (let i = 0; i < s.length; i++) {
-  if(s.length > t.length){
-    let ans = (s.length)-(t.length);
-    document.write(ans);
-    if (ans==k) {
-    document.write("No");
+  // if(s.length > t.length){
+  //   let ans = (s.length)-(t.length);
+  //   document.write(ans);
+  //   if (ans==k) {
+  //   document.write("No");
       
-    }else{document.write("Yes");}
-    // document.write("No")
-  }else{document.write("Yes");}
+  //   }else{document.write("Yes");}
+  //   // document.write("No")
+  // }else{document.write("Yes");}
   // document.write(`\t${s.indexOf(s[i])} is ${s[i]}\t`)
 // }
+
+
+
+// @@@@@@ taum and birthday @@@ (code in c language)
+
+// b = 10, w = 10
+// bc = 1, wc = 1, z = 1
+// b = 5, w = 5
+// bc = 2, wc = 3, z = 4
+// b = 3, w = 6
+// bc = 9, wc = 1, z = 1
+
+// long taumBday(int b, int w, int bc, int wc, int z) {
+  long totalCost = 0;
+    
+    long blackCost ;
+    if(wc + z < bc){blackCost = wc+z ;}
+    else{blackCost = bc;}
+    
+
+    long whiteCost ;
+    if(bc + z < wc){whiteCost = bc + z ;}
+    else{whiteCost = wc ;}
+    
+    totalCost = (long)( (b*blackCost) + (w*whiteCost) );
+    
+    return totalCost ;
+}
 
 
 
