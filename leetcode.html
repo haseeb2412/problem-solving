@@ -204,19 +204,45 @@
 // Output: true
 // Explanation: 121 reads as 121 from left to right and from right to left.
 
-let input = 121;
-// let myresult=null;
-let a = input.toString();
-function myfunction(x){
-const y = x.toString().split("").reverse().join("");
-    if (y == x){
-        return true
-    }{
-        return false
-    }
+// let input = 121;
+// // let myresult=null;
+// let a = input.toString();
+// function myfunction(x){
+// const y = x.toString().split("").reverse().join("");
+//     if (y == x){
+//         return true
+//     }{
+//         return false
+//     }
 
-}
+// }
 
+// @@@@   another question @@@@@
+let n=5,p=3;let my=0;
+
+let front = Math.floor(p/2);
+let back = Math.floor(n/2) -front;
+document.write(front);
+document.write(back);
+let final = Math.min(10,11,23,front,back);
+document.write(final);
+
+// if (n-p == 1 || n-p==0) {
+//     document.write("0");
+// }else{
+//     if ((n%2==1 && p%2==0) ) {
+//         my=Math.round(n/p)-1;
+//         document.write(my);
+//     }else if((n%2==1 && p%2==1)){
+//         my=Math.round((n-p)/2);
+//     }else{
+//         my=Math.round(n/p)-2;
+//         document.write(my);
+//     }
+// }
+
+// my=Math.round(n/p)-1;
+// document.write(my);
         </script>
 </body>
 </html>
