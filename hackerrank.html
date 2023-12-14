@@ -143,22 +143,41 @@ let k = 9;
 // bc = 9, wc = 1, z = 1
 
 // long taumBday(int b, int w, int bc, int wc, int z) {
-  long totalCost = 0;
+  // long totalCost = 0;
     
-    long blackCost ;
-    if(wc + z < bc){blackCost = wc+z ;}
-    else{blackCost = bc;}
+  //   long blackCost ;
+  //   if(wc + z < bc){blackCost = wc+z ;}
+  //   else{blackCost = bc;}
     
 
-    long whiteCost ;
-    if(bc + z < wc){whiteCost = bc + z ;}
-    else{whiteCost = wc ;}
+  //   long whiteCost ;
+  //   if(bc + z < wc){whiteCost = bc + z ;}
+  //   else{whiteCost = wc ;}
     
-    totalCost = (long)( (b*blackCost) + (w*whiteCost) );
+  //   totalCost = (long)( (b*blackCost) + (w*whiteCost) );
     
-    return totalCost ;
-}
+  //   return totalCost ;
+// }
 
+//  @@@@@@ mars exploration @@@@@
+
+let my="SOSSPSSQSSOR",answer=0;
+
+
+let difference = 0
+    
+    for (let i = 0; i < my.length; i++) {
+        const mod = i % 3
+        document.write(mod,"<br>");
+        
+        if (
+            ((mod === 0 || mod === 2)  && my[i] !== 'S') ||
+            (mod === 1 && my[i] !== 'O')
+        ) 
+            difference++
+    }
+    
+    // document.write( difference);
 
 
     </script>
