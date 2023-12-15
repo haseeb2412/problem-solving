@@ -161,23 +161,40 @@ let k = 9;
 
 //  @@@@@@ mars exploration @@@@@
 
-let my="SOSSPSSQSSOR",answer=0;
+// let my="SOSSPSSQSSOR",answer=0;
 
 
-let difference = 0
+// let difference = 0
     
-    for (let i = 0; i < my.length; i++) {
-        const mod = i % 3
-        document.write(mod,"<br>");
+//     for (let i = 0; i < my.length; i++) {
+//         const mod = i % 3
+//         document.write(mod,"<br>");
         
-        if (
-            ((mod === 0 || mod === 2)  && my[i] !== 'S') ||
-            (mod === 1 && my[i] !== 'O')
-        ) 
-            difference++
+//         if (
+//             ((mod === 0 || mod === 2)  && my[i] !== 'S') ||
+//             (mod === 1 && my[i] !== 'O')
+//         ) 
+//             difference++
+//     }
+    
+//     document.write( difference);
+
+// @@@ sorting question @@
+
+let arr=[30,2,32,4,234,2342,200,300,400,100];
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j] > arr[j+1]) {
+    let temp =arr[j];
+    arr[j] =arr[j+1];
+    arr[j+1]=temp
     }
     
-    // document.write( difference);
+  }
+  
+}
+document.write(arr);
+
 
 
     </script>
