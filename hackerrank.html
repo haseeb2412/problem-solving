@@ -181,20 +181,74 @@ let k = 9;
 
 // @@@ sorting question @@
 
-let arr=[30,2,32,4,234,2342,200,300,400,100];
-for (let i = 0; i < arr.length; i++) {
-  for (let j = 0; j < arr.length; j++) {
-    if (arr[j] > arr[j+1]) {
-    let temp =arr[j];
-    arr[j] =arr[j+1];
-    arr[j+1]=temp
-    }
+// let arr=[30,2,32,4,234,2342,200,300,400,100];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] > arr[j+1]) {
+//     let temp =arr[j];
+//     arr[j] =arr[j+1];
+//     arr[j+1]=temp
+//     }
     
+//   }
+  
+// }
+// document.write(arr);
+
+// @@@ string question @@@
+
+// this is m logic
+
+
+// let s = "acxz";
+// let emty = s.split("").map(value=>value.charCodeAt());
+// // document.write(emty)
+// let emty2=[];
+// for (let j = 0; j < emty.length; j++) {
+//   if(j+1 == emty.length){
+//     continue;
+//   }
+//   let c = emty[j+1]-emty[j];
+//   emty2.push(c);
+  
+// }
+// let reverse = emty2.slice().reverse();
+// // let final = emty.map((value,index,array)=>(index+1 === array.length) ? null : array[index+1]-value)
+// document.write(emty2,"<br>");
+// document.write(reverse);
+// if(JSON.stringify(emty2) === JSON.stringify(reverse)){
+//   document.write("funny");
+// }else{document.write("not funny")}
+
+// this is the code i copied
+
+// let n = s.split(‘’);
+// let r = n.slice().reverse();
+// let j = 1;
+// for(let i = 1; i < n.length; i++){
+//    if(Math.abs(n[i].charCodeAt() — n[i-1].charCodeAt()) ===
+//       Math.abs(r[i].charCodeAt() — r[i-1].charCodeAt())){
+//         j++;
+//       }
+//  }
+//   return j === n.length ? “Funny” : “Not Funny”
+
+
+//  another question sorting array 
+let arr = [2, 1, 3, 1, 2],shift =0;
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length-1; j++) {
+    if (arr[j] > arr[j+1]) {
+      let temp= arr[j];
+      arr[j]=arr[j+1];
+      arr[j+1]=temp;
+      shift++;
+    }
   }
   
 }
-document.write(arr);
-
+document.write(arr,"<br>");
+document.write(shift,"<br>");
 
 
     </script>
