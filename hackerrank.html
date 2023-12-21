@@ -250,6 +250,21 @@ for (let i = 0; i < arr.length; i++) {
 document.write(arr,"<br>");
 document.write(shift,"<br>");
 
+//  chocolate feast  question hackerrank
+function chocolateFeast(n, c, m) {
+    // Write your code here
+    let wrappers = Math.floor(n / c);
+    let count = wrappers;
+
+    while(wrappers >= m){
+        let add = Math.floor(wrappers/m);
+        wrappers -= (add * m);
+        wrappers += add;
+        count += add;
+    }
+    return count;
+}
+
 
     </script>
 </body>
