@@ -46,20 +46,42 @@
 
 // Input: operations = ["X++","++X","--X","X--"]
 // Output: 0
-let  x=0;
+// let  x=0;
 
-let operations = ["--X","X++","X++"];
-for (let i = 0; i < operations.length; i++) {
-    // document.write(i);
-    if (operations[i]== "++X" || operations[i]=="X++" ) {
-        x = x+1;
-    }
-    else{
-        x=x-1;
-    }
+// let operations = ["--X","X++","X++"];
+// for (let i = 0; i < operations.length; i++) {
+//     // document.write(i);
+//     if (operations[i]== "++X" || operations[i]=="X++" ) {
+//         x = x+1;
+//     }
+//     else{
+//         x=x-1;
+//     }
     
-}
-document.write(x);
+// }
+// document.write(x);
+
+
+//         @@@@@@@@ question 06 @@@@@@@@
+
+// Input: nums = [2,5,1,3,4,7], n = 3
+// Output: [2,3,5,4,1,7] 
+// Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
+
+  let nums = [2,5,1,3,4,7]
+  let n = 3;
+  let x= [];
+  let y= [];
+  for (let i = 0; i < n; i++) {
+    // nums[i] = x[i];
+    x[i] = nums[i];
+    y[i] = nums[i-1]
+   
+    
+    
+  }
+  document.write(x);
+  document.write(y);
                 
 
         </script>
