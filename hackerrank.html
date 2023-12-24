@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerRank</title>
+</head>
+<body>
+    <script>
+
+// 9 6 2015
+// 6 6 2015
+//    library fine 
+
+// int libraryFine(int d1, int m1, int y1, int d2, int m2, int y2) {
+//     int year_diff = y1 - y2 ;     //  >= 0
+//     int month_diff = m1 - m2 ;    // for same year
+//     int date_diff = d1 - d2 ;       // for same month
+    
+    
+//     if(year_diff >= 1){ return 10000 * year_diff ;}
+//     else if(month_diff >=1 && year_diff == 0){ return 500 * month_diff ;}
+//     else if(date_diff >=1 && month_diff == 0 && year_diff == 0){ return 15 * date_diff ;}
+    
+//     else{return 0;}
+// }
+
+// document.write(final);
+
+
+// @@@@@@@@@ question 01 @@@@@@@
+
+
+// Input: number = "123", digit = "3"
+// Output: "12"
+// Explanation: There is only one '3' in "123". After removing '3', the result is "12".
+
+// let number = "1231";
+// let digit = "1";
+// // document.write(number);
+
+// while (number.includes(digit)) {
+//     number = number.replace(digit, "");
+// }
+
+// document.write(number);
+
+// if(number.includes(digit)){
+//     document.write("yes");
+// }else{
+//     document.write("No");
+
+// }
+
+
+//    @@@@@@@@ new question  @@@@@@@@@ 
+
+
+
+// let user =prompt("lenght of the array :");
+// let array=[];
+// for (let i = 0; i < user; i++) {
+//     let input=prompt("enter the number :")
+//     array.push(input);
+    
+// }
+// let sortArray =array.sort()
+// document.write("<br>",array);
+// document.write("<br>",sortArray);
+// let input =[7 ,4, 3, 5 ,6 ,2];
+// let sortArray=input.sort();
+// document.write(sortArray);
+
+
+
+// let user = prompt("Length of the array:");
+// let array = [];
+
+// for (let i = 0; i < user; i++) {
+//     let input = prompt("Enter the number:");
+//     array.push(Number(input));  // Convert input to a number before pushing to the array
+// }
+
+// let sortedArray = array.slice().sort((a, b) => a - b);
+
+// document.write("<br>Original Array: ", array);
+// document.write("<br>Sorted Array: ", sortedArray);
+
+//   @@@@@ time conversion question
+
+// let ampm = s.charAt(8);
+// let militime = "";
+
+// if (ampm === "A") {
+//   if (s.substring(0, 2) === "12") {
+//     militime = "00";  // Change: used assignment operator (=) instead of equality operator (==)
+//   } else {
+//     militime = s.substring(0, 2);
+//   }
+// } else { // for PM
+//   if (s.substring(0, 2) === "12") {
+//     militime = s.substring(0, 2);
+//   } else {
+//     militime = String(parseInt(s.substring(0, 2), 10) + 12);
+//     // Change: Converted the result of the addition to a string using String()
+//   }
+// }
+
+// return militime + s.substring(2, 8);
+
+// @@@@@@ question appened and delete
+// hackerhappy
+// hackerrank
+// 9
+let s = "hackerhappy";
+let t  ="hackerrank";
+let k = 9;
+// document.write(r.length);
+// document.write(s.length);
+
+// for (let i = 0; i < s.length; i++) {
+  // if(s.length > t.length){
+  //   let ans = (s.length)-(t.length);
+  //   document.write(ans);
+  //   if (ans==k) {
+  //   document.write("No");
+      
+  //   }else{document.write("Yes");}
+  //   // document.write("No")
+  // }else{document.write("Yes");}
+  // document.write(`\t${s.indexOf(s[i])} is ${s[i]}\t`)
+// }
+
+
+
+// @@@@@@ taum and birthday @@@ (code in c language)
+
+// b = 10, w = 10
+// bc = 1, wc = 1, z = 1
+// b = 5, w = 5
+// bc = 2, wc = 3, z = 4
+// b = 3, w = 6
+// bc = 9, wc = 1, z = 1
+
+// long taumBday(int b, int w, int bc, int wc, int z) {
+  // long totalCost = 0;
+    
+  //   long blackCost ;
+  //   if(wc + z < bc){blackCost = wc+z ;}
+  //   else{blackCost = bc;}
+    
+
+  //   long whiteCost ;
+  //   if(bc + z < wc){whiteCost = bc + z ;}
+  //   else{whiteCost = wc ;}
+    
+  //   totalCost = (long)( (b*blackCost) + (w*whiteCost) );
+    
+  //   return totalCost ;
+// }
+
+//  @@@@@@ mars exploration @@@@@
+
+// let my="SOSSPSSQSSOR",answer=0;
+
+
+// let difference = 0
+    
+//     for (let i = 0; i < my.length; i++) {
+//         const mod = i % 3
+//         document.write(mod,"<br>");
+        
+//         if (
+//             ((mod === 0 || mod === 2)  && my[i] !== 'S') ||
+//             (mod === 1 && my[i] !== 'O')
+//         ) 
+//             difference++
+//     }
+    
+//     document.write( difference);
+
+// @@@ sorting question @@
+
+// let arr=[30,2,32,4,234,2342,200,300,400,100];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length; j++) {
+//     if (arr[j] > arr[j+1]) {
+//     let temp =arr[j];
+//     arr[j] =arr[j+1];
+//     arr[j+1]=temp
+//     }
+    
+//   }
+  
+// }
+// document.write(arr);
+
+// @@@ string question @@@
+
+// this is m logic
+
+
+// let s = "acxz";
+// let emty = s.split("").map(value=>value.charCodeAt());
+// // document.write(emty)
+// let emty2=[];
+// for (let j = 0; j < emty.length; j++) {
+//   if(j+1 == emty.length){
+//     continue;
+//   }
+//   let c = emty[j+1]-emty[j];
+//   emty2.push(c);
+  
+// }
+// let reverse = emty2.slice().reverse();
+// // let final = emty.map((value,index,array)=>(index+1 === array.length) ? null : array[index+1]-value)
+// document.write(emty2,"<br>");
+// document.write(reverse);
+// if(JSON.stringify(emty2) === JSON.stringify(reverse)){
+//   document.write("funny");
+// }else{document.write("not funny")}
+
+// this is the code i copied
+
+// let n = s.split(‘’);
+// let r = n.slice().reverse();
+// let j = 1;
+// for(let i = 1; i < n.length; i++){
+//    if(Math.abs(n[i].charCodeAt() — n[i-1].charCodeAt()) ===
+//       Math.abs(r[i].charCodeAt() — r[i-1].charCodeAt())){
+//         j++;
+//       }
+//  }
+//   return j === n.length ? “Funny” : “Not Funny”
+
+
+//  another question sorting array 
+let arr = [2, 1, 3, 1, 2],shift =0;
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length-1; j++) {
+    if (arr[j] > arr[j+1]) {
+      let temp= arr[j];
+      arr[j]=arr[j+1];
+      arr[j+1]=temp;
+      shift++;
+    }
+  }
+  
+}
+document.write(arr,"<br>");
+document.write(shift,"<br>");
+
+//  chocolate feast  question hackerrank
+function chocolateFeast(n, c, m) {
+    // Write your code here
+    let wrappers = Math.floor(n / c);
+    let count = wrappers;
+
+    while(wrappers >= m){
+        let add = Math.floor(wrappers/m);
+        wrappers -= (add * m);
+        wrappers += add;
+        count += add;
+    }
+    return count;
+}
+
+
+    </script>
+</body>
+</html>
