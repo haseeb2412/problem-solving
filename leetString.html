@@ -127,9 +127,23 @@ return words.length - new Set(words.map((a) => a[0]>a[1]? a[0]+a[1]: a[1]+a[0] )
     
 };
 
-// another questing heading
+// check palindromic word
+let words =["notapalindrome","racecar"];
 
 
+
+
+for (let i = 0; i < words.length; i++) {
+    let ab = words[i].split("");
+let  cleanedStr = ab.join('').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    if(cleanedStr === cleanedStr.split('').reverse().join('')){
+        document.write(`${words[i]}`);
+        break;
+    }else{
+        continue;
+    }
+
+}
 
 
 
