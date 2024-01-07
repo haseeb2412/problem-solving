@@ -30,25 +30,25 @@
 
 // leet code array question 
 
-var leftRightDifference = function(nums) {
-       const n = nums.length;
+// var leftRightDifference = function(nums) {
+//        const n = nums.length;
 
-    const leftSum = new Array(n + 1).fill(0);
-    const rightSum = new Array(n + 1).fill(0);
+//     const leftSum = new Array(n + 1).fill(0);
+//     const rightSum = new Array(n + 1).fill(0);
 
-    for (let i = 1; i <= n; i++) {
-        leftSum[i] = leftSum[i - 1] + nums[i - 1];
-        rightSum[n - i] = rightSum[n - i + 1] + nums[n - i];
-    }
+//     for (let i = 1; i <= n; i++) {
+//         leftSum[i] = leftSum[i - 1] + nums[i - 1];
+//         rightSum[n - i] = rightSum[n - i + 1] + nums[n - i];
+//     }
 
 
-    const result = Array.from({ length: n }, (_, i) =>
-        Math.abs(leftSum[i] - rightSum[i + 1])
-    );
+//     const result = Array.from({ length: n }, (_, i) =>
+//         Math.abs(leftSum[i] - rightSum[i + 1])
+//     );
 
-    return result;
+//     return result;
 
-};
+// };
     </script>
 </body>
 </html>
