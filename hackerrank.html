@@ -266,6 +266,23 @@ function chocolateFeast(n, c, m) {
 }
 
 
+// hackerrank question Subarray division
+let set = []
+        if (m > 1 && m < s.length) {
+            let i=0;
+            while(i<s.length){
+                let chocoSquares=s.slice(i,i+m)
+                let sum=chocoSquares.reduce((acc,curr)=> acc+=curr,0)
+                sum===d && set.push(sum)
+                i++;
+            }
+        }
+        else{
+            const elm=s.find(i=>i===d)
+            elm && set.push([elm])
+        }
+    return set.length
+
     </script>
 </body>
 </html>
