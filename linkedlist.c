@@ -31,3 +31,5 @@ int main(){
     insertAtBeginning(&mylist,234);
     insertAtBeginning(&mylist,236);
 }
+
+// linked list basic structure 
